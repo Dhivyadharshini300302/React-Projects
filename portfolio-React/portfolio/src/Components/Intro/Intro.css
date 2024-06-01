@@ -1,0 +1,91 @@
+#intro {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 4rem); 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding-top: 150px;
+  background: black; 
+  overflow: hidden;
+}
+
+.introContent {
+  position: relative;
+  z-index: 2;
+  text-align:left;
+  margin-left: -20em;
+  color: #333; 
+}
+
+.hello {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.introText {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.introName {
+  color: rgb(212, 55, 81); 
+}
+
+.introPara {
+  font-size: 1.2rem;
+  padding-top: 1em;
+  
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 2em;
+  font-size: 20px;
+}
+
+.btn img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: yellow; 
+}
+
+.bg {
+  position: absolute;
+  object-fit: cover;
+  right: 100px;
+  width: 30%;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+
+}
+
+
+@media (max-width: 920px){
+  .introContent{
+    text-align: left;
+    margin-left: 2em;
+  }
+  .bg{
+    width: 40%;
+    height: calc(100vh - 4rem);
+  }
+}
+  

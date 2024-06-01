@@ -1,0 +1,110 @@
+
+ .navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #888585; 
+  color: white;
+  padding: 1rem;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  
+}
+  
+  .logo {
+    height: 50px; 
+  }
+  
+ 
+  .desktopMenu {
+    margin-top: .8em;
+    display: flex;
+    gap: 30px; 
+  }
+  
+  .desktopMenuListItem {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: color 0.3s; 
+  }
+  
+  .desktopMenuListItem:hover {
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid yellow;
+  }
+  
+  
+  .desktopMenubtn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #eee7e7;
+    border: none;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .desktopMenubtn:hover {
+    background-color: #777; 
+  }
+  
+  .desktopMenuImg {
+    object-fit: cover;
+    height: 20px; 
+    margin-right: 10px; 
+  }
+  .active{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+    padding-bottom: 0.5rem;
+  }
+  .mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+  }
+  .navMenu{
+    position: absolute;
+    top:4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+    cursor: pointer;
+
+  }
+
+  .listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin:0.25rem;
+    background: rgb(30,30,30);
+
+  }
+  
+  
+  @media (max-width: 720px) {
+    .mobMenu{
+      display: flex;
+    }
+    .desktopMenu{
+      display: none;
+    }
+    .desktopMenubtn{
+      display: none;
+    }
+  }
+    
+    
+  
